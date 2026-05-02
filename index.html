@@ -1,44 +1,105 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>H. Cumaili</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="google-site-verification" content="99Zs1ntgftdyrhp-0oz6wG93MXHjcoJShpOuSq5BMM4" />
+<title>H. Cumaili | Textual-Historical Research</title>
 
 <style>
 body {
-    font-family: Arial;
-    background-color: #f4f4f4;
     margin: 0;
-}
-
-.container {
-    max-width: 900px;
-    margin: auto;
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    margin-top: 20px;
-}
-
-h1, h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    background-color: #f4f4f4;
     color: #222;
+    line-height: 1.7;
 }
 
-.section {
-    margin-top: 30px;
+/* ===== Banner ===== */
+.banner img {
+    width: 100%;
+    max-height: 420px;
+    object-fit: cover;
 }
 
+/* ===== Container ===== */
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 30px 20px;
+    background: white;
+}
+
+/* ===== Titles ===== */
+h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    margin-top: 40px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+}
+
+/* ===== Book Section ===== */
 .book {
     display: flex;
     gap: 20px;
-    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
 }
 
 .book img {
+    width: 200px;
+    border-radius: 6px;
+}
+
+.book-text {
+    flex: 1;
+}
+
+/* ===== Profile ===== */
+.profile {
+    display: flex;
+    gap: 20px;
+    margin-top: 40px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.profile img {
     width: 150px;
-    border-radius: 8px;
+    border-radius: 50%;
+}
+
+/* ===== Buttons ===== */
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.btn {
+    padding: 8px 14px;
+    background: #111;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.btn:hover {
+    background: #444;
+}
+
+/* ===== Footer ===== */
+.footer {
+    text-align: center;
+    margin-top: 50px;
+    color: #777;
+    font-size: 14px;
 }
 </style>
 
@@ -46,57 +107,113 @@ h1, h2 {
 
 <body>
 
-<!-- 🔥 البانر -->
-<img src="banner.jpg" style="width:100%;">
+<!-- ===== Banner ===== -->
+<div class="banner">
+    <img src="banner.jpg" alt="Banner">
+</div>
 
 <div class="container">
 
 <h1>H. Cumaili</h1>
-<p><b>Independent Researcher in Biblical Studies & Early Christian Interpretation</b></p>
+<p><strong>Independent Researcher in Biblical Studies & Textual-Historical Analysis</strong></p>
 
-<div class="section">
-<h2>Research Focus</h2>
-<ul>
-<li>Johannine Literature and early Christian texts</li>
-<li>Second Temple Judaism</li>
-<li>Textual and historical criticism</li>
-<li>Development of theological concepts</li>
-</ul>
-</div>
+<!-- ===== Project Definition ===== -->
+<h2>Project Definition</h2>
 
-<div class="section">
+<p>
+This project does not stop at a limited point. All prophets stand within one frame — 
+they are messengers of the same Lord, without division.
+</p>
+
+<p>
+The aim of this project is to define the Divine, and to examine what has occurred 
+within the texts that led to narrative tensions in the portrayal of God.
+</p>
+
+<p>
+If we seek to define God, we must begin with what is physically observable — 
+a reality not based on assumptions, but one that can be approached through 
+mathematical, physical, and structural reflection.
+</p>
+
+<p>
+From the structure of the heavens to the motion of celestial bodies, 
+we encounter precision and order that cannot be reduced to chance.
+</p>
+
+<p>
+God is complete — without deficiency, without human limitation. 
+He does not learn, regret, or change through experience.
+</p>
+
+<p>
+He is the Creator who knows what He has made and what it becomes.
+</p>
+
+<p>
+This project stands as an attempt to approach the Divine through textual clarity 
+and observable reality.
+</p>
+
+<p><strong>
+My pen is the witness — and you are the judges.
+</strong></p>
+
+<!-- ===== Book ===== -->
 <h2>Featured Book</h2>
 
 <div class="book">
-<img src="book.jpg">
-
-<div>
-<b>God or Religion?</b>
-<p>
-A textual-historical study exploring the development of religious interpretation
-from Moses to the last prophet.
-</p>
+    <img src="book.jpg" alt="Book">
+    <div class="book-text">
+        <h3>God or Religion?</h3>
+        <p>
+        A textual-historical study exploring whether religion is the origin 
+        or the result of interpretation.
+        </p>
+    </div>
 </div>
 
-</div>
+<!-- ===== Profile ===== -->
+<h2>About the Author</h2>
+
+<div class="profile">
+    <img src="profile.jpg" alt="Profile">
+    <div>
+        <p>
+        H. Cumaili is an independent researcher specializing in Biblical studies, 
+        textual criticism, and the development of interpretation across time.
+        </p>
+    </div>
 </div>
 
-<div class="section">
-<h2>Methodology</h2>
-<ul>
-<li>Textual development over doctrine</li>
-<li>Linguistic precision</li>
-<li>Historical context</li>
-</ul>
-</div>
-
-<div class="section">
+<!-- ===== Platforms ===== -->
 <h2>Official Platforms</h2>
-<ul>
-<li><a href="#">WordPress</a></li>
-<li><a href="#">Medium</a></li>
-<li><a href="#">ORCID</a></li>
-</ul>
+
+<div class="buttons">
+
+<a href="https://orcid.org/0009-0005-8938-119X" target="_blank" class="btn">ORCID</a>
+
+<a href="https://medium.com/@H.cumaili" target="_blank" class="btn">Medium</a>
+
+<a href="https://medium.com/prophetic-texts-biblical-history" target="_blank" class="btn">PTBH</a>
+
+<a href="https://www.linkedin.com/in/h-cumaili-620b12206/" target="_blank" class="btn">LinkedIn</a>
+
+<a href="https://independentresearcher.academia.edu/HCumaili" target="_blank" class="btn">Academia</a>
+
+<a href="https://philpeople.org/profiles/h-cumaili" target="_blank" class="btn">PhilPeople</a>
+
+<a href="https://ssrn.com/author=11365068" target="_blank" class="btn">SSRN</a>
+
+<a href="https://www.amazon.com/dp/B0GWH6NF5C" target="_blank" class="btn">Amazon</a>
+
+<a href="https://sites.google.com/view/hcumaili" target="_blank" class="btn">Google Site</a>
+
+</div>
+
+<!-- ===== Footer ===== -->
+<div class="footer">
+© 2026 H. Cumaili — All Rights Reserved
 </div>
 
 </div>
