@@ -50,6 +50,7 @@ body {
     text-decoration: none;
     border: 1px solid #c8a96a;
     transition: 0.3s;
+    overflow: hidden;
 }
 
 .book-card:hover {
@@ -67,48 +68,6 @@ body {
     border: none;
 }
 
-/* ===== Article (Research Pages) ===== */
-.article {
-    max-width: 850px;
-    margin: 80px auto;
-    padding: 20px;
-    line-height: 1.9;
-    font-size: 18px;
-}
-
-.article h1 {
-    font-size: 42px;
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-.article .subtitle {
-    text-align: center;
-    color: #777;
-    margin-bottom: 50px;
-}
-
-.article h2 {
-    font-size: 26px;
-    margin-top: 50px;
-    border-bottom: 2px solid #ddd;
-    padding-bottom: 10px;
-}
-
-.article h3 {
-    font-size: 20px;
-    margin-top: 35px;
-}
-
-.article p {
-    margin-top: 18px;
-}
-
-.article hr {
-    margin: 45px 0;
-    border: none;
-    border-top: 1px solid #ddd;
-}
 .book-card img {
     width: 100%;
     height: auto;
@@ -116,28 +75,34 @@ body {
     margin-bottom: 15px;
     display: block;
 }
-.book-card {
-    overflow: hidden;
-}
-/* ===== Article Reading Mode ===== */
+
+/* ===== Article (Reading Mode) ===== */
 .article {
-    max-width: 720px; /* أضيق = مريح أكثر */
+    max-width: 720px;
     margin: 100px auto;
     padding: 40px 25px;
-    line-height: 2.1; /* مسافة بين السطور */
-    font-size: 20px; /* تكبير النص */
-    background: #fffdf8; /* لون ورقي */
+    line-height: 2.1;
+    font-size: 20px;
+    background: #fffdf8;
     color: #222;
 }
 
-/* العنوان الرئيسي */
+/* Title */
 .article h1 {
     font-size: 48px;
+    text-align: center;
     margin-bottom: 20px;
     letter-spacing: 1px;
 }
 
-/* العناوين الفرعية */
+/* Subtitle */
+.article .subtitle {
+    text-align: center;
+    color: #777;
+    margin-bottom: 50px;
+}
+
+/* Section titles */
 .article h2 {
     font-size: 28px;
     margin-top: 60px;
@@ -146,18 +111,26 @@ body {
     padding-bottom: 8px;
 }
 
-/* الفقرات */
-.article p {
-    margin-bottom: 22px;
-    text-align: justify; /* مثل الكتب */
-}
-
-/* مسافة بين الأقسام */
+/* Sub sections */
 .article h3 {
+    font-size: 20px;
     margin-top: 40px;
 }
 
-/* تحسين الموبايل */
+/* Paragraphs */
+.article p {
+    margin-bottom: 22px;
+    text-align: justify;
+}
+
+/* Divider */
+.article hr {
+    margin: 45px 0;
+    border: none;
+    border-top: 1px solid #ddd;
+}
+
+/* ===== Mobile Optimization ===== */
 @media (max-width: 768px) {
     .article {
         font-size: 18px;
