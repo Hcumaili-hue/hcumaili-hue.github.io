@@ -162,16 +162,6 @@
   color: #888;
   border: none;
 }
-<h2>Textual Tension in Genesis: From Creation to Inheritance (1–50)</h2>
-
-<p>The text as it stands invites not only reading, but examination.</p>
-
-<p>Genesis is often approached as a unified and continuous narrative. Yet a closer reading reveals a more complex structure...</p>
-
-<h3>1. Creation and the Structure of Order (Genesis 1–2)</h3>
-
-<p>The opening chapters present not a single unified sequence, but two distinct narrative constructions...</p>
-
-<h3>2. Knowledge and Expulsion (Genesis 3)</h3>
-
-<p>The narrative introduces a central tension...</p>
+.article {
+    white-space: pre-line;
+}
