@@ -165,3 +165,6 @@
 .article {
     white-space: pre-line;
 }
+.article {
+    max-width: 800px;
+}
