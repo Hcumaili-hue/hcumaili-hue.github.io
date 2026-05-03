@@ -116,3 +116,6 @@ body {
     margin-bottom: 15px;
     display: block;
 }
+.book-card {
+    overflow: hidden;
+}
