@@ -6,156 +6,39 @@ body {
     color: #222;
 }
 
-/* ===== Buttons ===== */
-.book-btn {
-    display: inline-block;
-    padding: 16px 36px;
-    background: #111;
-    color: #c8a96a;
-    text-decoration: none;
-    border: 1px solid #c8a96a;
-    border-radius: 12px;
-    font-weight: 600;
-    font-size: 17px;
-    transition: 0.3s;
-    margin-top: 15px;
-}
-
-.book-btn:hover {
-    background: #1a1a1a;
-}
-
-/* ===== Library Layout ===== */
-.library-container {
-    max-width: 1100px;
-    margin: 80px auto;
-    padding: 20px;
-    text-align: center;
-}
-
-.library {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 25px;
-    margin-top: 40px;
-}
-
-/* ===== Cards ===== */
-.book-card {
-    display: block;
-    background: #111;
-    color: #c8a96a;
-    padding: 40px 20px;
-    border-radius: 12px;
-    text-decoration: none;
-    border: 1px solid #c8a96a;
-    transition: 0.3s;
-    overflow: hidden;
-}
-
-.book-card:hover {
-    transform: translateY(-5px);
-    background: #1a1a1a;
-}
-
-.book-card h2 {
-    margin-bottom: 10px;
-}
-
-.book-card.disabled {
-    background: #eee;
-    color: #888;
-    border: none;
-}
-
-.book-card img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 15px;
-    display: block;
-}
-
-/* ===== Article (Reading Mode) ===== */
-.article {
-    max-width: 720px;
-    margin: 100px auto;
-    padding: 40px 25px;
-    line-height: 2.1;
-    font-size: 20px;
-    background: #fffdf8;
-    color: #222;
-}
-
-/* Title */
-.article h1 {
-    font-size: 48px;
-    text-align: center;
-    margin-bottom: 20px;
-    letter-spacing: 1px;
-}
-
-/* Subtitle */
-.article .subtitle {
-    text-align: center;
-    color: #777;
-    margin-bottom: 50px;
-}
-
-/* Section titles */
-.article h2 {
-    font-size: 28px;
-    margin-top: 60px;
-    margin-bottom: 15px;
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 8px;
-}
-
-/* Sub sections */
-.article h3 {
-    font-size: 20px;
-    margin-top: 40px;
-}
-
-/* Paragraphs */
-.article p {
-    margin-bottom: 22px;
-    text-align: justify;
-}
-
-/* Divider */
-.article hr {
-    margin: 45px 0;
-    border: none;
-    border-top: 1px solid #ddd;
-}
-
-/* ===== Mobile Optimization ===== */
-@media (max-width: 768px) {
-    .article {
-        font-size: 18px;
-        padding: 25px 15px;
-    }
-
-    .article h1 {
-        font-size: 36px;
-    }
-}
-/* ===== Links Fix (Gold Theme) ===== */
+/* ===== Global Links ===== */
 a {
     color: #c8a96a;
     text-decoration: none;
 }
 
 a:visited {
-    color: #c8a96a; /* يمنع البنفسجي */
+    color: #c8a96a;
 }
 
 a:hover {
     color: #e0c080;
 }
-/* ===== About Page ===== */
 
+/* ===== Unified Buttons ===== */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #111;
+    color: #c8a96a;
+    border: 1px solid #c8a96a;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+.btn:hover {
+    background: #c8a96a;
+    color: #000;
+}
+
+/* ===== Hero Section ===== */
 .hero {
     text-align: center;
     padding: 80px 20px 40px;
@@ -172,6 +55,7 @@ a:hover {
     color: #aaa;
 }
 
+/* ===== Content ===== */
 .content {
     max-width: 800px;
     margin: 60px auto;
@@ -192,11 +76,96 @@ a:hover {
     border-bottom: 1px solid #ddd;
     padding-bottom: 5px;
 }
-.read-more {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 10px 20px;
-  background: black;
-  color: white;
-  text-decoration: none;
+
+/* ===== Library Layout ===== */
+.library-container {
+    max-width: 1100px;
+    margin: 80px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.library {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+}
+
+/* ===== Book Cards ===== */
+.book-card {
+    display: block;
+    background: #111;
+    color: #c8a96a;
+    padding: 40px 20px;
+    border-radius: 12px;
+    text-decoration: none;
+    border: 1px solid #c8a96a;
+    transition: 0.3s;
+}
+
+.book-card:hover {
+    transform: translateY(-5px);
+    background: #1a1a1a;
+}
+
+.book-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Disabled Card */
+.book-card.disabled {
+    background: #eee;
+    color: #888;
+    border: none;
+}
+
+/* ===== Article (Reading Mode) ===== */
+.article {
+    max-width: 720px;
+    margin: 100px auto;
+    padding: 40px 25px;
+    line-height: 2.1;
+    font-size: 20px;
+    background: #fffdf8;
+}
+
+.article h1 {
+    font-size: 42px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.article h2 {
+    font-size: 26px;
+    margin-top: 60px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 8px;
+}
+
+.article p {
+    margin-bottom: 22px;
+    text-align: justify;
+}
+
+/* ===== Footer ===== */
+footer {
+    text-align: center;
+    padding: 30px;
+    font-size: 14px;
+    color: #777;
+}
+
+/* ===== Mobile ===== */
+@media (max-width: 768px) {
+    .article {
+        font-size: 18px;
+        padding: 25px 15px;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
 }
