@@ -141,3 +141,16 @@ body {
         font-size: 36px;
     }
 }
+/* ===== Links Fix (Gold Theme) ===== */
+a {
+    color: #c8a96a;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #c8a96a; /* يمنع البنفسجي */
+}
+
+a:hover {
+    color: #e0c080;
+}
