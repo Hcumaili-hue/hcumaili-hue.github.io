@@ -179,3 +179,23 @@ footer {
     text-decoration: none;
     font-weight: 600;
 }
+/* Manuscript image block (Medium style) */
+.manuscript {
+  margin: 50px auto;
+  max-width: 720px;
+  text-align: center;
+}
+
+.manuscript img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.manuscript figcaption {
+  font-size: 14px;
+  color: #6b6b6b;
+  margin-top: 12px;
+  line-height: 1.6;
+  font-style: italic;
+}
