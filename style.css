@@ -262,16 +262,20 @@ blockquote{
 }
 
 /* =====================================
+   
+/* =====================================
    ARCHIVE WINDOWS
 ===================================== */
 
 .archive-section{
+
     width:90%;
     max-width:1200px;
     margin:100px auto;
 }
 
 .archive-grid{
+
     display:grid;
 
     grid-template-columns:
@@ -281,6 +285,7 @@ blockquote{
 }
 
 .archive-window{
+
     background:#fbf8f1;
 
     border:1px solid #d9c7a0;
@@ -301,12 +306,15 @@ blockquote{
     0 12px 30px rgba(0,0,0,0.05);
 
     width:100%;
-    max-width:540px;
+    max-width:420px;
 
     margin:auto;
+
+    border-radius:4px;
 }
 
 .archive-window:hover{
+
     transform:translateY(-6px);
 
     box-shadow:
@@ -314,14 +322,20 @@ blockquote{
 }
 
 .window-top{
+
     font-size:0.75rem;
+
     letter-spacing:3px;
+
     color:#9b7b42;
+
     margin-bottom:24px;
 }
 
 .archive-book{
-    width:120px;
+
+    width:95px;
+
     margin:auto;
 
     box-shadow:
@@ -329,26 +343,37 @@ blockquote{
 }
 
 .archive-window h3{
+
     font-size:1.8rem;
+
     text-align:center;
+
     margin-top:22px;
+
     margin-bottom:12px;
 }
 
 .archive-window p{
+
     text-align:center;
+
     color:#555;
+
     font-size:0.98rem;
+
     max-width:320px;
+
     margin:auto;
 }
 
 .archive-btn{
+
     display:block;
 
     width:70px;
 
     margin:auto;
+
     margin-top:30px;
 
     background:#111;
@@ -373,20 +398,27 @@ blockquote{
 }
 
 .archive-btn:hover{
+
     background:#d4af63;
+
     color:#111;
 }
 
 .disabled-btn{
+
     opacity:0.5;
+
     pointer-events:none;
 }
 
 .coming-box{
+
     flex:1;
 
     display:flex;
+
     flex-direction:column;
+
     justify-content:center;
 }
 
