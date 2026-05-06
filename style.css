@@ -1,181 +1,414 @@
-/* ===== General ===== */
-body {
-    font-family: Georgia, serif;
-    margin: 0;
-    background: #f9f9f9;
-    color: #222;
+/* =========================================
+   H. Cumaili — Academic Research Archive
+========================================= */
+
+:root{
+
+    --bg:#f5f1e8;
+    --paper:#fbf8f2;
+
+    --black:#111111;
+
+    --gold:#b08a47;
+    --gold-light:#d6b06a;
+
+    --line:#ddd2b7;
+
+    --text:#262626;
 }
 
-/* ===== Global Links ===== */
-a {
-    color: #c8a96a;
-    text-decoration: none;
+/* ================= RESET ================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-a:visited {
-    color: #c8a96a;
+html{
+    scroll-behavior:smooth;
 }
 
-a:hover {
-    color: #e0c080;
+body{
+
+    background:var(--bg);
+
+    color:var(--text);
+
+    font-family:'Inter',sans-serif;
+
+    line-height:1.9;
 }
 
-/* ===== Unified Buttons ===== */
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background: #111;
-    color: #c8a96a;
-    border: 1px solid #c8a96a;
-    text-decoration: none;
-    border-radius: 8px;
-    transition: 0.3s;
-    font-size: 14px;
+img{
+    max-width:100%;
+    display:block;
 }
 
-.btn:hover {
-    background: #c8a96a;
-    color: #000;
+/* ================= HERO ================= */
+
+.hero{
+
+    position:relative;
+
+    min-height:430px;
+
+    background:
+    linear-gradient(
+    rgba(0,0,0,0.70),
+    rgba(0,0,0,0.72)),
+    url("banner.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+
+    align-items:center;
 }
 
-/* ===== Hero Section ===== */
-.hero {
-    text-align: center;
-    padding: 80px 20px 40px;
-    background: #111;
-    color: #c8a96a;
+.hero-content{
+
+    width:88%;
+    max-width:1100px;
+
+    margin:auto;
+
+    position:relative;
+
+    z-index:2;
 }
 
-.hero h2 {
-    font-size: 36px;
-    margin-bottom: 10px;
+.hero-label{
+
+    color:var(--gold-light);
+
+    letter-spacing:4px;
+
+    font-size:0.8rem;
+
+    margin-bottom:22px;
 }
 
-.hero p {
-    color: #aaa;
+h1,h2,h3{
+
+    font-family:
+    'Cormorant Garamond',
+    serif;
 }
 
-/* ===== Content ===== */
-.content {
-    max-width: 800px;
-    margin: 60px auto;
-    padding: 20px;
-    line-height: 2;
-    font-size: 18px;
-    background: #fffdf8;
+h1{
+
+    color:white;
+
+    font-size:4.2rem;
+
+    line-height:1;
+
+    margin-bottom:22px;
+
+    font-weight:600;
 }
 
-.text-block p {
-    margin-bottom: 20px;
+.hero-text{
+
+    color:#ececec;
+
+    max-width:680px;
+
+    font-size:1.05rem;
+
+    margin-bottom:34px;
 }
 
-.text-block h3 {
-    margin-top: 40px;
-    margin-bottom: 15px;
-    font-size: 22px;
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 5px;
+/* ================= BUTTONS ================= */
+
+.main-btn{
+
+    display:inline-flex;
+
+    align-items:center;
+    justify-content:center;
+
+    padding:13px 24px;
+
+    background:#111;
+
+    color:var(--gold-light);
+
+    border:1px solid var(--gold);
+
+    text-decoration:none;
+
+    transition:0.3s;
+
+    letter-spacing:0.4px;
 }
 
-/* ===== Library Layout ===== */
-.library-container {
-    max-width: 1100px;
-    margin: 80px auto;
-    padding: 20px;
-    text-align: center;
+.main-btn:hover{
+
+    background:#1c1c1c;
+
+    transform:translateY(-2px);
 }
 
-.library {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 25px;
-    margin-top: 40px;
+.secondary-btn{
+
+    opacity:0.7;
 }
 
-/* ===== Book Cards ===== */
-.book-card {
-    display: block;
-    background: #111;
-    color: #c8a96a;
-    padding: 40px 20px;
-    border-radius: 12px;
-    text-decoration: none;
-    border: 1px solid #c8a96a;
-    transition: 0.3s;
+/* ================= MAIN ================= */
+
+.container{
+
+    width:88%;
+    max-width:1100px;
+
+    margin:auto;
 }
 
-.book-card:hover {
-    transform: translateY(-5px);
-    background: #1a1a1a;
+/* ================= SECTIONS ================= */
+
+.section{
+
+    margin-top:90px;
 }
 
-.book-card img {
-    width: 100%;
-    border-radius: 10px;
-    margin-bottom: 15px;
+.section-head{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+    margin-bottom:38px;
 }
 
-/* Disabled Card */
-.book-card.disabled {
-    background: #eee;
-    color: #888;
-    border: none;
+.section-head span{
+
+    width:60px;
+    height:1px;
+
+    background:var(--gold);
 }
 
-/* ===== Article (Reading Mode) ===== */
-.article {
-    max-width: 720px;
-    margin: 100px auto;
-    padding: 40px 25px;
-    line-height: 2.1;
-    font-size: 20px;
-    background: #fffdf8;
+h2{
+
+    font-size:2.7rem;
+
+    color:#1b1b1b;
 }
 
-.article h1 {
-    font-size: 42px;
-    text-align: center;
-    margin-bottom: 20px;
+p{
+
+    margin-bottom:20px;
 }
 
-.article h2 {
-    font-size: 26px;
-    margin-top: 60px;
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 8px;
+/* ================= BOOK ================= */
+
+.book-layout{
+
+    display:grid;
+
+    grid-template-columns:
+    280px 1fr;
+
+    gap:70px;
+
+    align-items:center;
 }
 
-.article p {
-    margin-bottom: 22px;
-    text-align: justify;
+.book-cover img{
+
+    width:100%;
+
+    max-width:280px;
+
+    margin:auto;
+
+    border:1px solid var(--line);
+
+    box-shadow:
+    0 12px 30px rgba(0,0,0,0.08);
 }
 
-/* ===== Footer ===== */
-footer {
-    text-align: center;
-    padding: 30px;
-    font-size: 14px;
-    color: #777;
+.book-label{
+
+    color:var(--gold);
+
+    letter-spacing:3px;
+
+    font-size:0.75rem;
+
+    margin-bottom:16px;
 }
 
-/* ===== Mobile ===== */
-@media (max-width: 768px) {
-    .article {
-        font-size: 18px;
-        padding: 25px 15px;
-    }
+.book-info h3{
 
-    .hero h2 {
-        font-size: 28px;
-    }
+    font-size:3.4rem;
+
+    margin-bottom:20px;
 }
-.enter-btn {
-    display: inline-block;
-    padding: 16px 32px;
-    font-size: 18px;
-    border-radius: 12px;
-    background: #c8a96a;
-    color: #111;
-    text-decoration: none;
-    font-weight: 600;
+
+.book-buttons{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:14px;
+
+    margin-top:28px;
+}
+
+/* ================= AUTHOR ================= */
+
+.author-layout{
+
+    display:grid;
+
+    grid-template-columns:
+    180px 1fr;
+
+    gap:45px;
+
+    align-items:center;
+}
+
+.author-layout img{
+
+    width:180px;
+    height:180px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    border:2px solid var(--gold);
+
+    margin:auto;
+}
+
+/* ================= PLATFORMS ================= */
+
+.platform-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(220px,1fr));
+
+    gap:16px;
+}
+
+.platform-btn{
+
+    background:#111;
+
+    color:var(--gold-light);
+
+    border:1px solid var(--gold);
+
+    padding:16px;
+
+    text-decoration:none;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:10px;
+
+    transition:0.3s;
+}
+
+.platform-btn:hover{
+
+    background:#1c1c1c;
+
+    transform:translateY(-2px);
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+
+    margin-top:90px;
+
+    border-top:1px solid var(--line);
+
+    text-align:center;
+
+    padding:28px;
+
+    color:#777;
+
+    font-size:0.95rem;
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:900px){
+
+.hero{
+
+    min-height:320px;
+}
+
+.hero-content{
+
+    width:92%;
+}
+
+h1{
+
+    font-size:2.8rem;
+}
+
+.hero-text{
+
+    font-size:0.98rem;
+}
+
+.container{
+
+    width:92%;
+}
+
+.section{
+
+    margin-top:65px;
+}
+
+h2{
+
+    font-size:2rem;
+}
+
+.book-layout,
+.author-layout{
+
+    grid-template-columns:1fr;
+
+    gap:35px;
+}
+
+.book-info h3{
+
+    font-size:2.4rem;
+}
+
+.main-btn,
+.platform-btn{
+
+    width:100%;
+}
+
+.platform-grid{
+
+    grid-template-columns:1fr;
+}
 }
