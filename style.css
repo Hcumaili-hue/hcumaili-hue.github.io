@@ -19,7 +19,6 @@
   --accent:#1f3042;
 
   --border:#ddd4c8;
-
 }
 
 html{
@@ -527,11 +526,18 @@ nav a.active{
 
   border:1px solid var(--border);
 
-  border-radius:26px;
+  border-radius:28px;
 
-  padding:32px;
+  padding:42px 28px;
 
-  transition:.3s;
+  transition:.35s;
+
+  text-align:center;
+
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
 }
 
 .link-box:hover{
@@ -560,90 +566,6 @@ nav a.active{
 .link-box:hover .link-icon i{
 
   transform:scale(1.08);
-}
-/* =========================
-   FOOTER
-========================= */
-
-footer{
-
-  border-top:1px solid var(--border);
-
-  padding:42px 0;
-}
-
-footer p{
-
-  text-align:center;
-
-  color:var(--muted);
-
-  font-size:.92rem;
-}
-
-/* =========================
-   MOBILE
-========================= */
-
-@media(max-width:900px){
-
-  nav{
-
-    flex-direction:column;
-
-    gap:20px;
-  }
-
-  nav ul{
-
-    gap:18px;
-
-    flex-wrap:wrap;
-
-    justify-content:center;
-  }
-
-  .hero{
-
-    min-height:58vh;
-  }
-
-  .hero-overlay{
-
-    padding:55px 30px;
-  }
-
-  .intro-container,
-  .book-container{
-
-    grid-template-columns:1fr;
-  }
-
-  .text-block{
-
-    padding:42px 28px;
-  }
-
-  .library-card{
-
-    padding:45px 30px;
-  }
-
-}
-
-.link-box{
-
-  background:var(--paper);
-
-  border:1px solid var(--border);
-
-  border-radius:28px;
-
-  padding:42px 28px;
-
-  transition:.35s;
-
-  text-align:center;
 }
 
 /* =========================
@@ -680,6 +602,10 @@ footer p{
   overflow:hidden;
 
   transition:.35s;
+
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
 }
 
 .research-card:hover{
@@ -753,8 +679,6 @@ footer p{
   display:flex;
   align-items:center;
   justify-content:center;
-
-  min-height:100%;
 }
 
 .empty-content{
@@ -785,4 +709,73 @@ footer p{
   font-size:1.4rem;
 
   color:var(--accent);
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+
+  border-top:1px solid var(--border);
+
+  padding:42px 0;
+}
+
+footer p{
+
+  text-align:center;
+
+  color:var(--muted);
+
+  font-size:.92rem;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:900px){
+
+  nav{
+
+    flex-direction:column;
+
+    gap:20px;
+  }
+
+  nav ul{
+
+    gap:18px;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+  }
+
+  .hero{
+
+    min-height:58vh;
+  }
+
+  .hero-overlay{
+
+    padding:55px 30px;
+  }
+
+  .intro-container,
+  .book-container{
+
+    grid-template-columns:1fr;
+  }
+
+  .text-block{
+
+    padding:42px 28px;
+  }
+
+  .library-card{
+
+    padding:45px 30px;
+  }
 }
