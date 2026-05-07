@@ -487,70 +487,6 @@ footer p{
 
 ```css
 /* =========================
-   MOBILE
-========================= */
-
-@media(max-width:900px){
-
-  nav{
-
-    flex-direction:column;
-
-    gap:20px;
-  }
-
-  nav ul{
-
-    gap:18px;
-
-    flex-wrap:wrap;
-
-    justify-content:center;
-  }
-
-  .hero{
-
-    height:240px;
-
-    border-radius:26px;
-
-    margin:22px auto;
-
-    background-size:cover;
-
-    background-position:center;
-  }
-
-  .hero-overlay{
-
-    padding:40px 24px;
-  }
-
-  .intro-container,
-  .book-container{
-
-    grid-template-columns:1fr;
-  }
-
-  .text-block{
-
-    padding:42px 28px;
-  }
-
-  .library-card{
-
-    padding:45px 30px;
-  }
-
-  .intro-text h2,
-  .book-text h2,
-  .text-block h3{
-
-    font-size:2.2rem;
-  }
-}
-
-/* =========================
    LINKS / PLATFORMS
 ========================= */
 
@@ -646,46 +582,96 @@ footer p{
     letter-spacing:.3px;
 }
 
-/* MOBILE */
-
-@media(max-width:768px){
-
-    .links-grid{
-
-        grid-template-columns:1fr;
-
-        padding:0;
-    }
-
-    .link-box{
-
-        padding:24px 18px;
-    }
-
-    .link-box:hover{
-
-        transform:translateY(-4px);
-    }
-}
-```
 /* =========================
-   MOBILE FIX
+   MOBILE RESPONSIVE
 ========================= */
 
 @media(max-width:768px){
 
-  .intro-container,
-  .book-container{
+  body{
+    overflow-x:hidden;
+  }
+
+  section,
+  div,
+  img{
+    max-width:100%;
+  }
+
+  /* NAVBAR */
+
+  nav{
+
+    width:92%;
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+    gap:16px;
+
+    padding:18px 0;
+  }
+
+  nav h1{
+
+    font-size:1.8rem;
+  }
+
+  nav ul{
+
+    width:100%;
+
+    flex-wrap:wrap;
+
+    gap:14px;
+
+    justify-content:flex-start;
+  }
+
+  nav a{
+
+    font-size:.9rem;
+  }
+
+  /* HERO */
+
+  .hero{
+
+    width:92%;
+
+    height:240px;
+
+    margin:20px auto;
+
+    border-radius:24px;
+
+    background-position:center;
+
+    background-size:cover;
+  }
+
+  .hero-overlay{
+
+    padding:24px;
+  }
+
+  /* INTRO */
+
+  .intro{
+
+    padding:70px 0;
+  }
+
+  .intro-container{
+
+    width:92%;
 
     display:flex;
+
     flex-direction:column;
 
     gap:40px;
-  }
-
-  .intro-text{
-
-    width:100%;
   }
 
   .intro-text h2{
@@ -693,45 +679,172 @@ footer p{
     font-size:2.4rem;
 
     line-height:1.2;
+
+    margin-bottom:20px;
   }
 
-  .intro-image{
+  .intro-text p{
 
-    width:100%;
+    font-size:1rem;
+
+    line-height:1.9;
   }
 
   .intro-image img{
 
     width:100%;
 
-    max-width:420px;
+    max-width:380px;
 
     margin:auto;
 
     border-radius:24px;
   }
 
-  .hero{
+  /* CONTENT */
 
-    height:320px;
+  .content{
 
-    background-position:center;
+    padding:20px 0 70px;
   }
 
-  nav{
+  .text-block{
 
-    padding:18px 0;
+    width:92%;
+
+    padding:36px 24px;
+
+    border-radius:26px;
   }
 
-  nav ul{
+  .text-block h3{
 
-    justify-content:center;
+    font-size:2.3rem;
+
+    line-height:1.2;
+
+    margin-bottom:24px;
+  }
+
+  .text-block p{
+
+    font-size:1rem;
+
+    line-height:2;
+  }
+
+  /* BOOK */
+
+  .book{
+
+    padding:70px 0;
+  }
+
+  .book-container{
+
+    width:92%;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:40px;
+  }
+
+  .book-cover img{
+
+    max-width:260px;
+  }
+
+  .book-text h2{
+
+    font-size:2.4rem;
+
+    line-height:1.2;
+  }
+
+  .book-text p{
+
+    font-size:1rem;
+  }
+
+  .book-buttons{
+
+    display:flex;
+
+    flex-direction:column;
 
     gap:14px;
   }
 
-  nav a{
+  /* LIBRARY */
 
-    font-size:.88rem;
+  .library{
+
+    padding:70px 0;
+  }
+
+  .library-container{
+
+    width:92%;
+  }
+
+  .library-card{
+
+    padding:40px 24px;
+
+    border-radius:26px;
+  }
+
+  /* LINKS */
+
+  .links{
+
+    padding:70px 0;
+  }
+
+  .links-container{
+
+    width:92%;
+  }
+
+  .links-grid{
+
+    grid-template-columns:1fr;
+
+    gap:18px;
+
+    padding:0;
+  }
+
+  .link-box{
+
+    padding:24px 18px;
+
+    border-radius:22px;
+  }
+
+  .link-box:hover{
+
+    transform:translateY(-4px);
+  }
+
+  .link-icon{
+
+    font-size:2rem;
+  }
+
+  /* FOOTER */
+
+  footer{
+
+    padding:30px 0;
+  }
+
+  footer p{
+
+    font-size:.85rem;
+
+    text-align:center;
   }
 }
