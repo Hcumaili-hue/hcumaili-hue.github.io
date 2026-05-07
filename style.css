@@ -541,21 +541,26 @@ nav a.active{
 
 .link-icon{
 
-  width:46px;
-  height:46px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
 
-  border-radius:14px;
-
-  background:#e8dfd2;
-
-  margin-bottom:18px;
+  margin-bottom:22px;
 }
 
-.link-box p{
+.link-icon i{
 
-  color:#333;
+  font-size:2.8rem;
+
+  color:var(--accent);
+
+  transition:.3s;
 }
 
+.link-box:hover .link-icon i{
+
+  transform:scale(1.08);
+}
 /* =========================
    FOOTER
 ========================= */
