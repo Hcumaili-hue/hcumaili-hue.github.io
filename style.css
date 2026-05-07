@@ -650,25 +650,6 @@ footer p{
 
     background:#efe7da;
 }
-
-/* MOBILE */
-
-@media(max-width:768px){
-
-    .platforms-container{
-
-        width:92%;
-
-        padding:24px;
-    }
-
-    .platform-links{
-
-        grid-template-columns:1fr;
-    }
-
-    .platform-links a{
-
-        font-size:.95rem;
-    }
+.links-grid{
+    padding:0 12px;
 }
