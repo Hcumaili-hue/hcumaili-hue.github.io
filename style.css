@@ -625,3 +625,25 @@ footer p{
   }
 
 }
+.link-icon{
+
+  width:52px;
+  height:52px;
+
+  border-radius:16px;
+
+  background:#e8dfd2;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  margin-bottom:20px;
+}
+
+.link-icon i{
+
+  font-size:1.2rem;
+
+  color:var(--accent);
+}
