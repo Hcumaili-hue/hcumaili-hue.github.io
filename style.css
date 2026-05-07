@@ -123,20 +123,21 @@ nav a.active{
 
   width:min(1180px,90%);
 
-  margin:42px auto 0;
+  margin:32px auto;
 
-  min-height:78vh;
+  height:520px;
 
-  border-radius:38px;
+  border-radius:34px;
 
   overflow:hidden;
 
-  background:
-  linear-gradient(
-  rgba(10,15,20,0.72),
-  rgba(10,15,20,0.78)
-  ),
-  url('banner.jpg') center/cover;
+  background:url('banner.jpg');
+
+  background-size:cover;
+
+  background-position:center;
+
+  background-repeat:no-repeat;
 
   display:flex;
   align-items:center;
@@ -145,92 +146,6 @@ nav a.active{
 .hero-overlay{
 
   padding:90px;
-}
-
-.hero-mini{
-
-  color:rgba(255,255,255,0.70);
-
-  letter-spacing:2px;
-
-  font-size:.82rem;
-
-  margin-bottom:20px;
-}
-
-.hero h2{
-
-  font-family:'Playfair Display', serif;
-
-  font-size:clamp(3.2rem,8vw,6rem);
-
-  line-height:1.05;
-
-  color:white;
-
-  font-weight:600;
-
-  margin-bottom:24px;
-}
-
-.hero-text{
-
-  max-width:680px;
-
-  color:rgba(255,255,255,0.84);
-
-  font-size:1.08rem;
-
-  margin-bottom:38px;
-}
-
-.hero-buttons{
-
-  display:flex;
-
-  gap:18px;
-
-  flex-wrap:wrap;
-}
-
-/* =========================
-   BUTTONS
-========================= */
-
-.dark-btn{
-
-  background:white;
-
-  color:#111;
-
-  padding:15px 28px;
-
-  border-radius:999px;
-
-  transition:.3s;
-
-  font-size:.95rem;
-}
-
-.light-btn{
-
-  border:1px solid rgba(255,255,255,0.30);
-
-  color:white;
-
-  padding:15px 28px;
-
-  border-radius:999px;
-
-  transition:.3s;
-
-  font-size:.95rem;
-}
-
-.dark-btn:hover,
-.light-btn:hover{
-
-  transform:translateY(-3px);
 }
 
 /* =========================
@@ -282,6 +197,37 @@ nav a.active{
   border-radius:30px;
 
   box-shadow:0 20px 60px rgba(0,0,0,.08);
+}
+
+/* =========================
+   PROFILE CAPTION
+========================= */
+
+.profile-caption{
+
+  text-align:center;
+
+  margin-top:22px;
+}
+
+.profile-caption h3{
+
+  font-family:'Playfair Display', serif;
+
+  font-size:1.6rem;
+
+  margin-bottom:8px;
+
+  color:var(--accent);
+}
+
+.profile-caption p{
+
+  font-size:.95rem;
+
+  letter-spacing:.5px;
+
+  color:var(--muted);
 }
 
 /* =========================
@@ -402,29 +348,6 @@ nav a.active{
   max-width:650px;
 }
 
-.book-buttons{
-
-  display:flex;
-
-  gap:18px;
-
-  flex-wrap:wrap;
-}
-
-.book .dark-btn{
-
-  background:var(--accent);
-
-  color:white;
-}
-
-.book .light-btn{
-
-  color:var(--accent);
-
-  border:1px solid #c9bfb2;
-}
-
 /* =========================
    LIBRARY
 ========================= */
@@ -457,121 +380,6 @@ nav a.active{
 .library-card:hover{
 
   transform:translateY(-5px);
-}
-
-.library-icon{
-
-  width:76px;
-  height:76px;
-
-  border-radius:20px;
-
-  background:#ebe2d6;
-
-  margin-bottom:34px;
-}
-
-.library-card h2{
-
-  font-family:'Playfair Display', serif;
-
-  font-size:3.1rem;
-
-  margin-bottom:22px;
-
-  color:var(--accent);
-}
-
-.library-card p{
-
-  max-width:720px;
-
-  color:#555;
-}
-
-/* =========================
-   OFFICIAL PLATFORMS
-========================= */
-
-.links{
-
-  padding:20px 0 110px;
-}
-
-.links-container{
-
-  width:min(1120px,90%);
-
-  margin:auto;
-}
-
-.section-header h2{
-
-  font-family:'Playfair Display', serif;
-
-  font-size:2.8rem;
-
-  margin-bottom:40px;
-
-  color:var(--accent);
-}
-
-.links-grid{
-
-  display:grid;
-
-  grid-template-columns:
-  repeat(auto-fit,minmax(190px,1fr));
-
-  gap:24px;
-}
-
-.link-box{
-
-  background:var(--paper);
-
-  border:1px solid var(--border);
-
-  border-radius:28px;
-
-  padding:42px 28px;
-
-  transition:.35s;
-
-  text-align:center;
-
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  justify-content:center;
-}
-
-.link-box:hover{
-
-  transform:translateY(-4px);
-}
-
-.link-icon{
-
-  display:flex;
-  align-items:center;
-  justify-content:center;
-
-  margin-bottom:22px;
-}
-
-.link-icon i{
-
-  font-size:2.8rem;
-
-  color:var(--accent);
-
-  transition:.3s;
-}
-
-.link-box:hover .link-icon i{
-
-  transform:scale(1.08);
 }
 
 /* =========================
@@ -657,77 +465,6 @@ nav a.active{
   margin-bottom:28px;
 }
 
-.enter-btn{
-
-  width:62px;
-  height:62px;
-
-  margin:auto;
-
-  border-radius:50%;
-
-  background:var(--accent);
-
-  color:white;
-
-  display:flex;
-  align-items:center;
-  justify-content:center;
-
-  transition:.3s;
-}
-
-.enter-btn:hover{
-
-  transform:translateY(-3px) scale(1.06);
-}
-
-.enter-btn i{
-
-  font-size:1rem;
-}
-.enter-btn:hover{
-
-  transform:scale(1.08);
-}
-
-.empty-card{
-
-  display:flex;
-  align-items:center;
-  justify-content:center;
-}
-
-.empty-content{
-
-  text-align:center;
-
-  padding:40px;
-}
-
-.soon-icon{
-
-  width:70px;
-  height:70px;
-
-  border-radius:50%;
-
-  background:#ece2d6;
-
-  display:flex;
-  align-items:center;
-  justify-content:center;
-
-  margin:auto;
-}
-
-.soon-icon i{
-
-  font-size:1.4rem;
-
-  color:var(--accent);
-}
-
 /* =========================
    FOOTER
 ========================= */
@@ -772,12 +509,20 @@ footer p{
 
   .hero{
 
-    min-height:58vh;
+    height:240px;
+
+    border-radius:26px;
+
+    margin:22px auto;
+
+    background-size:cover;
+
+    background-position:center;
   }
 
   .hero-overlay{
 
-    padding:55px 30px;
+    padding:40px 24px;
   }
 
   .intro-container,
@@ -795,73 +540,11 @@ footer p{
 
     padding:45px 30px;
   }
-}
-.profile-caption{
 
-  text-align:center;
+  .intro-text h2,
+  .book-text h2,
+  .text-block h3{
 
-  margin-top:22px;
-}
-
-.profile-caption h3{
-
-  font-family:'Playfair Display', serif;
-
-  font-size:1.6rem;
-
-  margin-bottom:8px;
-
-  color:var(--accent);
-}
-
-.profile-caption p{
-
-  font-size:.95rem;
-
-  letter-spacing:.5px;
-
-  color:var(--muted);
-}
-.hero::before{
-    background: rgba(0,0,0,0.05) !important;
-}
-
-.hero img{
-    filter: brightness(1.12) contrast(1.05);
-}
-.hero{
-    position: relative;
-    overflow: hidden;
-}
-
-.hero::before{
-    display: none !important;
-    background: transparent !important;
-}
-
-.hero-overlay{
-    background: transparent !important;
-}
-
-.hero img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    filter: brightness(1.25) contrast(1.08) !important;
-    opacity: 1 !important;
-}
-@media (max-width: 768px){
-
-.hero{
-    height: 260px !important;
-    border-radius: 28px;
-    margin: 25px 14px;
-}
-
-.hero img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
+    font-size:2.2rem;
+  }
 }
