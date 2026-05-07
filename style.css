@@ -571,6 +571,29 @@ footer p{
     font-size:16px;
 }
 
+/* FIX PLATFORM SECTION */
+.platforms-container{
+    width:min(1100px,92%);
+    margin:0 auto;
+    padding:40px 20px;
+}
+
+.platform-links{
+    display:flex;
+    flex-wrap:wrap;
+    gap:18px;
+    align-items:center;
+}
+
+.platform-links a{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    text-decoration:none;
+    color:#1f2937;
+    font-size:16px;
+}
+
 /* FIX MOBILE */
 @media (max-width:768px){
 
