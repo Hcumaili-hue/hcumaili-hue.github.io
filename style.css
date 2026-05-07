@@ -796,3 +796,29 @@ footer p{
     padding:45px 30px;
   }
 }
+.profile-caption{
+
+  text-align:center;
+
+  margin-top:22px;
+}
+
+.profile-caption h3{
+
+  font-family:'Playfair Display', serif;
+
+  font-size:1.6rem;
+
+  margin-bottom:8px;
+
+  color:var(--accent);
+}
+
+.profile-caption p{
+
+  font-size:.95rem;
+
+  letter-spacing:.5px;
+
+  color:var(--muted);
+}
