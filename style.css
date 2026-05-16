@@ -892,3 +892,34 @@ MOBILE
   margin:40px auto;
 
 }
+.about-link{
+  text-align:center;
+  margin-top:40px;
+}
+
+.about-button{
+
+  display:inline-block;
+
+  padding:14px 32px;
+
+  border:1px solid var(--gold-dark);
+
+  border-radius:40px;
+
+  text-decoration:none;
+
+  color:var(--gold-dark);
+
+  font-family:'Cinzel', serif;
+
+  transition:0.3s;
+}
+
+.about-button:hover{
+
+  background:var(--gold-dark);
+
+  color:white;
+
+}
