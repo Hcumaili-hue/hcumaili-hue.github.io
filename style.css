@@ -878,3 +878,17 @@ MOBILE
     font-size:40px;
   }
 }
+.about-profile{
+
+  width:160px;
+  height:160px;
+
+  object-fit:cover;
+
+  border-radius:50%;
+
+  display:block;
+
+  margin:40px auto;
+
+}
