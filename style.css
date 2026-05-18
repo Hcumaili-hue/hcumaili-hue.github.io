@@ -122,7 +122,7 @@ NAVBAR
 
   font-size:13px;
 
-  color:#8f7441;
+  color:var(--gold-soft);
 }
 
 nav{
@@ -151,7 +151,7 @@ HERO
 .hero{
   width:100%;
   overflow:hidden;
-  background:#060606;
+background:var(--dark);
 }
 
 .hero img{
@@ -176,7 +176,7 @@ HERO
 
   padding:12px 24px;
 
-  border:1px solid rgba(199,155,59,.4);
+ border:1px solid var(--gold-soft);
 
   background:var(--black);
 
@@ -398,9 +398,9 @@ LIBRARY SYSTEM
 
 .library-card{
 
-  background:#111111;
+background:var(--dark-soft);
 
-  border:1px solid #2a2112;
+border:1px solid var(--gold-soft);
 
   border-radius:26px;
 
@@ -432,9 +432,9 @@ LIBRARY SYSTEM
   align-items:center;
   justify-content:center;
 
-  background:#171717;
+ background:var(--dark-hover);
 
-  color:#C79B3D;
+color:var(--gold);
 
   font-size:34px;
 
@@ -447,12 +447,13 @@ LIBRARY SYSTEM
 
   font-size:30px;
 
-  color:#ffffff;
+  color:var(--white);
 
   margin-bottom:18px;
 
   font-family:'Cinzel', serif;
 }
+
 
 .library-card p{
 
@@ -468,19 +469,22 @@ LIBRARY SYSTEM
 .library-enter{
 
   display:inline-flex;
+
   align-items:center;
+
   justify-content:center;
 
   width:170px;
+
   height:54px;
 
   border-radius:8px;
 
-  background:#171717;
+  background:var(--dark-hover);
 
-  border:1px solid #8f7441;
+  border:1px solid var(--gold-soft);
 
-  color:#C79B3D;
+  color:var(--gold);
 
   font-family:'Cinzel', serif;
 
@@ -582,9 +586,9 @@ blockquote{
 
   border-left:4px solid var(--gold-dark);
 
-  background:#f1ebe2;
+  background:var(--cream-block);
 
-  color:#5f4b27;
+  color:var(--text-brown);
 
   font-size:1.3rem;
 
@@ -592,7 +596,6 @@ blockquote{
 
   font-style:italic;
 }
-
 /* =========================
 TABLES
 ========================= */
